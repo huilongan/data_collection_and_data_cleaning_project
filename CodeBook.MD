@@ -24,26 +24,26 @@ For each record in the dataset it is provided:
 
 ### Data Manipulation Technique And Corresponding Methods  
 
-#Step 1: Merge the data
+Step 1: Merge the data
 
 Here I used functions "rename", "mutate", "left_join" of "dplyr" and "names" and some basic data frame manipulation tools of base. Firstly,
 I used read.table to load test data and training data into my R workspace. And then, I made up these two datasets respectively. And used
 rbind function to put them together.
 
-#Step 2: Select the variable
+Step 2: Select the variable
 
 Actually, I finished it in Step 1, where I used "grep" function to subtract the pattern I summarized from the variable names, which measure
 the mean and sd.
 
-#Step 3: Clean the variable names
+Step 3: Clean the variable names
 
 I used loop to subsitude the complexing part of variable names.
 
-#Step 4: Get the Cleaned Data
+Step 4: Get the Cleaned Data
 
 Note that I added a new variable named "test_index" to represent whether it comes from test dataset.
 
-#Step 5: Average
+Step 5: Average
 
 I mainly used functions from "reshape" package.
 
